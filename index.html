@@ -7,6 +7,16 @@
       name="description"
       content="Hsabli — Smart calculation for aluminum, glass, and wood craftsmen. Calculate costs and pricing in seconds."
     />
+    <meta property="og:title" content="Hsabli — حسبها بسهولة" />
+    <meta
+      property="og:description"
+      content="تطبيق حقيقي للفواتير، أنواع الزجاج، دفاتر الألمنيوم، والمجاميع. معاينة من داخل Hsabli."
+    />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/aminebensalahdev-blip/webHsabli/main/assets/app-screen-invoice.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
     <title>Hsabli — Smart calculation for craftsmen</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -76,6 +86,13 @@
           radial-gradient(ellipse 60% 40% at 100% 0%, rgba(16, 185, 129, 0.08), transparent),
           radial-gradient(ellipse 50% 30% at 0% 100%, rgba(30, 58, 138, 0.06), transparent);
       }
+      .hide-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
       @keyframes cta-shimmer {
         0%,
         100% {
@@ -108,6 +125,7 @@
         <div class="hidden items-center gap-8 text-sm font-medium text-slate-600 md:flex">
           <a href="#features" class="transition-colors hover:text-primary">Features</a>
           <a href="#how-it-works" class="transition-colors hover:text-primary">How it works</a>
+          <a href="#app-preview" class="transition-colors hover:text-primary">App look</a>
           <a href="#screenshots" class="transition-colors hover:text-primary">Screenshots</a>
           <a href="#testimonials" class="transition-colors hover:text-primary">Stories</a>
         </div>
@@ -182,10 +200,10 @@
             >
               <div class="relative h-full overflow-hidden rounded-[2.1rem] bg-slate-900">
                 <img
-                  src="assets/app-screen-quote-result.png"
-                  alt="Hsabli app — aluminum quote with total and line items"
-                  width="576"
-                  height="1000"
+                  src="assets/app-screen-invoice.png"
+                  alt="Hsabli — شاشة Nouvelle facture مع شريط التنقل (Facture، Verres، Aluminium)"
+                  width="572"
+                  height="1012"
                   class="h-full w-full object-cover object-top"
                   loading="eager"
                   fetchpriority="high"
@@ -203,6 +221,98 @@
             ></div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- App look: real screenshots strip (recognize the UI) -->
+    <section id="app-preview" class="scroll-mt-24 border-y border-slate-200/80 bg-gradient-to-b from-slate-50 to-white py-14 sm:py-16">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-3xl text-center" data-reveal>
+          <p class="text-sm font-semibold uppercase tracking-wide text-secondary">Real app UI</p>
+          <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl" dir="rtl" lang="ar">
+            تعرّف على شكل التطبيق قبل التحميل
+          </h2>
+          <p class="mt-3 text-base text-slate-600 sm:text-lg">
+            لقطات حقيقية من Hsabli: فواتير وزجاج، أسعار الأنواع، دفتر ألمنيوم، ثم النتيجة التفصيلية — نفس الألوان والقوائم داخل التطبيق.
+          </p>
+        </div>
+
+        <div
+          class="hide-scrollbar mt-10 flex snap-x snap-mandatory gap-5 overflow-x-auto pb-2 pl-1 pr-1 pt-1 sm:flex-wrap sm:justify-center sm:overflow-visible"
+        >
+          <a href="#screenshots" class="group block shrink-0 snap-center sm:shrink" data-reveal>
+            <div
+              class="relative w-[46vw] max-w-[210px] overflow-hidden rounded-[1.75rem] border-[8px] border-slate-900 bg-slate-900 shadow-xl ring-1 ring-white/15 transition-transform duration-300 group-hover:-translate-y-1 group-hover:shadow-2xl sm:w-[200px]"
+            >
+              <img
+                src="assets/app-screen-invoice.png"
+                alt="Nouvelle facture — vitrier"
+                width="572"
+                height="1012"
+                class="aspect-[572/1012] w-full object-cover object-top"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <p class="mt-2 text-center text-xs font-medium text-slate-500 sm:text-sm" dir="ltr">Nouvelle facture</p>
+            <p class="text-center text-[11px] text-slate-400" dir="rtl">فاتورة — زجاج</p>
+          </a>
+          <a href="#screenshots" class="group block shrink-0 snap-center sm:shrink" data-reveal>
+            <div
+              class="relative w-[46vw] max-w-[210px] overflow-hidden rounded-[1.75rem] border-[8px] border-slate-900 bg-slate-900 shadow-xl ring-1 ring-white/15 transition-transform duration-300 group-hover:-translate-y-1 group-hover:shadow-2xl sm:w-[200px]"
+            >
+              <img
+                src="assets/app-screen-glass-types.png"
+                alt="Types de verre"
+                width="568"
+                height="1016"
+                class="aspect-[568/1016] w-full object-cover object-top"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <p class="mt-2 text-center text-xs font-medium text-slate-500 sm:text-sm">Types de verre</p>
+            <p class="text-center text-[11px] text-slate-400" dir="rtl">أنواع الزجاج والأسعار</p>
+          </a>
+          <a href="#screenshots" class="group block shrink-0 snap-center sm:shrink" data-reveal>
+            <div
+              class="relative w-[46vw] max-w-[210px] overflow-hidden rounded-[1.75rem] border-[8px] border-slate-900 bg-slate-900 shadow-xl ring-1 ring-white/15 transition-transform duration-300 group-hover:-translate-y-1 group-hover:shadow-2xl sm:w-[200px]"
+            >
+              <img
+                src="assets/app-screen-aluminum.png"
+                alt="Devis châssis aluminium"
+                width="556"
+                height="966"
+                class="aspect-[556/966] w-full object-cover object-top"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <p class="mt-2 text-center text-xs font-medium text-slate-500 sm:text-sm">Devis aluminium</p>
+            <p class="text-center text-[11px] text-slate-400" dir="rtl">شاسيه ألمنيوم</p>
+          </a>
+          <a href="#screenshots" class="group block shrink-0 snap-center sm:shrink" data-reveal>
+            <div
+              class="relative w-[46vw] max-w-[210px] overflow-hidden rounded-[1.75rem] border-[8px] border-slate-900 bg-slate-900 shadow-xl ring-1 ring-white/15 transition-transform duration-300 group-hover:-translate-y-1 group-hover:shadow-2xl sm:w-[200px]"
+            >
+              <img
+                src="assets/app-screen-quote-result.png"
+                alt="Total devis et profilés"
+                width="576"
+                height="1000"
+                class="aspect-[576/1000] w-full object-cover object-top"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <p class="mt-2 text-center text-xs font-medium text-slate-500 sm:text-sm">Total &amp; détail</p>
+            <p class="text-center text-[11px] text-slate-400" dir="rtl">المجموع والتفاصيل</p>
+          </a>
+        </div>
+        <p class="mt-6 text-center text-sm text-slate-500" data-reveal>
+          <a href="#screenshots" class="font-semibold text-primary underline-offset-4 hover:underline">عرض أكبر للقطات</a>
+          — مرر يميناً على الجوال لرؤية كل الشاشات
+        </p>
       </div>
     </section>
 
@@ -339,11 +449,14 @@
     </section>
 
     <!-- Screenshots -->
-    <section id="screenshots" class="border-y border-slate-100 bg-slate-50/80 py-20 sm:py-24">
+    <section id="screenshots" class="scroll-mt-24 border-y border-slate-100 bg-slate-50/80 py-20 sm:py-24">
       <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div class="mx-auto max-w-2xl text-center" data-reveal>
           <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Inside the app</h2>
-          <p class="mt-4 text-lg text-slate-600">A focused UI that stays out of your way when you are on a deadline.</p>
+          <p class="mt-2 text-lg font-medium text-primary/90" dir="rtl" lang="ar">لقطات بحجم أكبر — كما يظهر التطبيق على الهاتف</p>
+          <p class="mt-3 text-lg text-slate-600">
+            Same screens as above: invoices, glass catalog, aluminum chassis, then quote breakdown — French UI as shipped in the app.
+          </p>
         </div>
         <div class="mt-14 grid gap-8 sm:grid-cols-2 xl:grid-cols-4">
           <figure
@@ -352,7 +465,7 @@
           >
             <div class="p-3 sm:p-4">
               <div
-                class="relative mx-auto aspect-[9/19.5] w-full max-w-[220px] overflow-hidden rounded-[1.65rem] border-[7px] border-slate-900 bg-slate-900 shadow-inner ring-1 ring-white/10"
+                class="relative mx-auto aspect-[9/19.5] w-full max-w-[280px] overflow-hidden rounded-[1.65rem] border-[7px] border-slate-900 bg-slate-900 shadow-inner ring-1 ring-white/10"
               >
                 <img
                   src="assets/app-screen-invoice.png"
@@ -375,7 +488,7 @@
           >
             <div class="p-3 sm:p-4">
               <div
-                class="relative mx-auto aspect-[9/19.5] w-full max-w-[220px] overflow-hidden rounded-[1.65rem] border-[7px] border-slate-900 bg-slate-900 shadow-inner ring-1 ring-white/10"
+                class="relative mx-auto aspect-[9/19.5] w-full max-w-[280px] overflow-hidden rounded-[1.65rem] border-[7px] border-slate-900 bg-slate-900 shadow-inner ring-1 ring-white/10"
               >
                 <img
                   src="assets/app-screen-glass-types.png"
@@ -398,7 +511,7 @@
           >
             <div class="p-3 sm:p-4">
               <div
-                class="relative mx-auto aspect-[9/19.5] w-full max-w-[220px] overflow-hidden rounded-[1.65rem] border-[7px] border-slate-900 bg-slate-900 shadow-inner ring-1 ring-white/10"
+                class="relative mx-auto aspect-[9/19.5] w-full max-w-[280px] overflow-hidden rounded-[1.65rem] border-[7px] border-slate-900 bg-slate-900 shadow-inner ring-1 ring-white/10"
               >
                 <img
                   src="assets/app-screen-aluminum.png"
@@ -421,7 +534,7 @@
           >
             <div class="p-3 sm:p-4">
               <div
-                class="relative mx-auto aspect-[9/19.5] w-full max-w-[220px] overflow-hidden rounded-[1.65rem] border-[7px] border-slate-900 bg-slate-900 shadow-inner ring-1 ring-white/10"
+                class="relative mx-auto aspect-[9/19.5] w-full max-w-[280px] overflow-hidden rounded-[1.65rem] border-[7px] border-slate-900 bg-slate-900 shadow-inner ring-1 ring-white/10"
               >
                 <img
                   src="assets/app-screen-quote-result.png"

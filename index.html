@@ -52,7 +52,7 @@
           "price": "0",
           "priceCurrency": "USD"
         },
-        "downloadUrl": "https://play.google.com/store",
+        "downloadUrl": "https://play.google.com/store/apps/details?id=com.hsabliya.app",
         "image": "https://raw.githubusercontent.com/aminebensalahdev-blip/webHsabli/main/assets/app-screens-collage.png"
       }
     </script>
@@ -162,7 +162,7 @@
         </div>
         <a
           href="#download"
-          class="rounded-full bg-primary px-4 py-2.5 text-sm font-semibold text-white shadow-md shadow-primary/20 transition-all hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/25 active:scale-[0.98]"
+          class="js-smart-download rounded-full bg-primary px-4 py-2.5 text-sm font-semibold text-white shadow-md shadow-primary/20 transition-all hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/25 active:scale-[0.98]"
           >Download</a
         >
       </nav>
@@ -210,7 +210,7 @@
           >
             <a
               href="#download"
-              class="inline-flex w-full items-center justify-center rounded-full bg-secondary px-8 py-4 text-base font-semibold text-white shadow-lg shadow-secondary/30 transition-all hover:-translate-y-0.5 hover:bg-emerald-600 hover:shadow-xl hover:shadow-secondary/35 sm:w-auto active:scale-[0.98]"
+              class="js-smart-download inline-flex w-full items-center justify-center rounded-full bg-secondary px-8 py-4 text-base font-semibold text-white shadow-lg shadow-secondary/30 transition-all hover:-translate-y-0.5 hover:bg-emerald-600 hover:shadow-xl hover:shadow-secondary/35 sm:w-auto active:scale-[0.98]"
             >
               Download App
             </a>
@@ -516,10 +516,10 @@
           </p>
           <div class="relative mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-6">
             <a
-              href="https://play.google.com/store"
+              href="https://play.google.com/store/apps/details?id=com.hsabliya.app"
               target="_blank"
               rel="noopener noreferrer"
-              class="inline-block transition-transform hover:scale-[1.03] active:scale-[0.98]"
+              class="js-smart-download inline-block transition-transform hover:scale-[1.03] active:scale-[0.98]"
               aria-label="Get it on Google Play"
             >
               <img
@@ -566,6 +566,23 @@
 
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
+
+      (function () {
+        var playAppUrl = "https://play.google.com/store/apps/details?id=com.hsabliya.app";
+        var ua = navigator.userAgent || "";
+        var isIOS =
+          /iPad|iPhone|iPod/i.test(ua) ||
+          (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+        document.querySelectorAll(".js-smart-download").forEach(function (el) {
+          if (isIOS) {
+            el.setAttribute("href", "#download");
+            el.removeAttribute("target");
+            el.removeAttribute("rel");
+          } else {
+            el.setAttribute("href", playAppUrl);
+          }
+        });
+      })();
 
       var header = document.getElementById("header");
       function onScroll() {
